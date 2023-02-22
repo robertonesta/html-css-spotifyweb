@@ -21,7 +21,7 @@ img{
     max-width: 100%;
 }
 h2{
-    margin: 0 1rem;
+    margin: 1rem 1rem;
     color: var(--s-light);
 }
 
@@ -51,10 +51,13 @@ h5{
 }
 
 .debug .card{
-    border: 1px dashed black;
     margin: 1rem;
     text-align: center;
     flex-direction: column;
+}
+
+.pop_artists img{
+    border-radius: 50%;
 }
 
 
@@ -192,9 +195,10 @@ footer.bottom{
     
 }
 
+.create_for h5, .pop_artists h5{
+    margin: 1rem;
+}
 /* #endregion content */
-
-/* main */
 
 
 /* region responsive */
@@ -269,8 +273,6 @@ footer.bottom{
         width: 230px;
         overflow-y: hidden;
     } 
-
-
 
     /* #region columns */
     .col_lg_1 {

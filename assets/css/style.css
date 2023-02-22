@@ -54,6 +54,7 @@ h5{
     border: 1px dashed black;
     margin: 1rem;
     text-align: center;
+    flex-direction: column;
 }
 
 
@@ -196,11 +197,21 @@ footer.bottom{
 /* main */
 
 
-
 /* region responsive */
-
-@media screen and (min-width:768px) {
+@media screen and (min-width:639px) {
     
+    .top > .sidebar {
+        width: 200px;
+        overflow-y: hidden;
+    }    
+    
+}
+@media screen and (min-width:878px) {
+
+
+
+    /* #region columns */
+
     .col_md_1 {
         width: calc((100% / 12) * 1);
     }
@@ -248,16 +259,20 @@ footer.bottom{
     .col_md_12{
         width: 100%;
     }
-    
+    /* #endregion columns */
 }
 
-@media screen and (min-width:1200px) {
+
+@media screen and (min-width:1440px) {
 
     .top > .sidebar {
-        width: 220px;
+        width: 230px;
         overflow-y: hidden;
-    }
+    } 
 
+
+
+    /* #region columns */
     .col_lg_1 {
         width: calc((100% / 12) * 1);
     }
@@ -305,7 +320,9 @@ footer.bottom{
     .col_lg_12{
         width: 100%;
     }
+    /* #endregion columns */
 }
+
 
 /* region effects */
 
@@ -317,6 +334,10 @@ button:hover{
     scale: 1.1;
 }
 
-a:hover{
+a:active{
     border-bottom: 2px solid var(--s-greenbar);
+}
+
+a:hover{
+    color: var(--s-light);
 }

@@ -7,7 +7,7 @@ body{
     font-family: 'Circular Std', sans-serif;
 }
 
-root{
+:root{
     --s-light: #ffffff;
     --s-upgrade: #080b12;
     --s-content: #141922;
@@ -24,15 +24,15 @@ root{
 }
 
 .debug footer{
-    background-color: palegoldenrod;
+    background-color: var(--s-footer);
 }
 
 .debug .sidebar{
-    background-color: black;
+    background-color: var(--s-sidebar);
 }
 
 .debug .content {
-    background-color: palevioletred;
+    background-color: var(--s-content);
 }
 
 
@@ -52,6 +52,8 @@ ul {
     list-style-type: none;
     justify-content: center;
     gap: 1rem;
+    margin: 2rem 0;
+    padding: 0.25rem;
 }
 
 .wrap{
@@ -151,7 +153,7 @@ footer.bottom{
     height: 4rem;
     text-align: end;
     align-content: center;
-    background-color: paleturquoise;
+    background-color: var(--s-upgrade);
 }
 
 .upgrade button{
@@ -270,4 +272,18 @@ footer.bottom{
     .col_lg_12{
         width: 100%;
     }
+}
+
+/* region effects */
+
+button{
+    transition: scale 0.1s;
+}
+
+button:hover{
+    scale: 1.1;
+}
+
+a:hover{
+    border-bottom: 2px solid var(--s-greenbar);
 }

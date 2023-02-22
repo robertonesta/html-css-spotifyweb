@@ -16,6 +16,21 @@ body{
     --s-footer: #282828;
     --s-greytext: #797b80;
 }
+
+img{
+    max-width: 100%;
+}
+h2{
+    margin: 0 1rem;
+    color: var(--s-light);
+}
+
+h4{
+    color: var(--s-light);
+}
+h5{
+    color: var(--s-greytext)
+}
 /* #region debug */
 
 .debug .top{
@@ -33,6 +48,12 @@ body{
 
 .debug .content {
     background-color: var(--s-content);
+}
+
+.debug .card{
+    border: 1px dashed black;
+    margin: 1rem;
+    text-align: center;
 }
 
 
@@ -58,6 +79,10 @@ ul {
 
 .wrap{
     flex-wrap: wrap;
+}
+
+.mt-1{
+    margin-top: 0.5rem;
 }
 
 /* #endregion utilities */
@@ -170,9 +195,12 @@ footer.bottom{
 
 /* main */
 
+
+
 /* region responsive */
 
 @media screen and (min-width:768px) {
+    
     .col_md_1 {
         width: calc((100% / 12) * 1);
     }
@@ -224,6 +252,11 @@ footer.bottom{
 }
 
 @media screen and (min-width:1200px) {
+
+    .top > .sidebar {
+        width: 220px;
+        overflow-y: hidden;
+    }
 
     .col_lg_1 {
         width: calc((100% / 12) * 1);

@@ -1,5 +1,67 @@
-*{
-    margin: 0;
+*{    margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    font-family: 'Circular Std', sans-serif;
+}
+
+/* #region debug */
+
+.debug .top{
+    background-color: paleturquoise;
+    
+}
+
+.debug footer{
+    background-color: palegoldenrod;
+}
+
+.debug .sidebar{
+    background-color: black;
+}
+
+.debug .content {
+    background-color: palevioletred;
+}
+/* #endregion debug */
+
+/* #region Utilities */
+
+.d-flex{
+    display: flex;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+/* #endregion utilities */
+
+/* #region layout */
+.top{
+    height: calc(100vh - 70px);
+    display: flex;
+}
+
+.top > .sidebar {
+    width: 70px;
+    overflow-y: hidden;
+}
+
+.top .sidebar_top{
+    height: calc(100% - 60px);
+}
+.top .sidebar_bottom {
+    height: 60px;
+}
+
+.top > .content{
+    width: calc(100% - 70px);
+    overflow-y: auto;
+}
+
+footer.bottom{
+    height: 70px;
 }

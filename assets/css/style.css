@@ -211,8 +211,9 @@ footer.bottom{
 
 .bottom .play {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    flex-direction: row;
+    margin-right: 0.5rem;
 }
 
 .song_name{
@@ -220,12 +221,17 @@ footer.bottom{
     align-items: center;
     margin: 0 0.5rem;
 }
-
-.bottom img {
-    max-width: 14%;
-    aspect-ratio: 1/1;
+.ft_left{
+    align-items: center;
 }
 
+.bottom img {
+    max-width: 100%;
+}
+
+.img_song{
+    width: 28px;
+}
 .bottom h5{
     color: var(--s-light);
 }
@@ -236,6 +242,7 @@ footer.bottom{
 
 .simbols i{
     color: var(--s-greytext);
+    padding: 0.1rem 0.25rem;
 }
 /* #endregion footer */
 
@@ -246,10 +253,15 @@ footer.bottom{
         width: 200px;
         overflow-y: hidden;
     }    
-    
+
+    .img_song{
+        width: 42px;
+    }
 }
 @media screen and (min-width:878px) {
-
+    .simbols{
+        flex-direction: row;
+    }
 
 
     /* #region columns */

@@ -244,6 +244,41 @@ footer.bottom{
     color: var(--s-greytext);
     padding: 0.1rem 0.25rem;
 }
+
+.ft_middle i{
+    padding: 0 1rem;
+    color: var(--s-light);
+}
+
+.fa-circle-play{
+    padding: 0 1rem;
+}
+
+.music_buttons, .progress_bar{
+    margin: 0.25rem 0;
+}
+
+.ft_middle input{
+    width: 100%;
+    background-color: var(--s-greytext);
+}
+
+.ft_right input{
+    width: 100px;
+    background-color: var(--s-greytext);
+}
+
+
+
+.start{
+    color: var(--s-light);
+    margin-right: 1rem;
+}
+
+.end{
+    color: var(--s-light);
+    margin-left: 1rem;
+}
 /* #endregion footer */
 
 /* region responsive */

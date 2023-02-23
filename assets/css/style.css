@@ -89,6 +89,9 @@ ul {
     margin-top: 0.5rem;
 }
 
+.relative{
+    position: relative;
+}
 /* #endregion utilities */
 nav a{
     text-decoration: none;
@@ -246,38 +249,74 @@ footer.bottom{
 }
 
 .ft_middle i{
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     color: var(--s-light);
 }
 
 .fa-circle-play{
-    padding: 0 1rem;
+    padding: 0 0.5rem;
 }
 
 .music_buttons, .progress_bar{
     margin: 0.25rem 0;
 }
 
-.ft_middle input{
-    width: 100%;
-    background-color: var(--s-greytext);
-}
-
-.ft_right input{
+.ft_middle .grey_bar{
+    position: absolute;
     width: 100px;
+    height: 3px;
     background-color: var(--s-greytext);
+    border-radius: 1rem;
+    margin: auto;    
+    z-index: 1;
 }
 
+.ft_middle .white_bar{
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: var(--s-light);
+    border-radius: 1rem;
+    margin: auto;   
+    z-index: 2;
+}
 
+.volume_greybar{
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: var(--s-greytext);
+    border-radius: 1rem;
+    margin: auto;
+}
+.volume_whitebar{
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: var(--s-light);
+    border-radius: 1rem;
+    margin: auto;
+}
 
 .start{
     color: var(--s-light);
     margin-right: 1rem;
+    font-size: 0.75rem;
 }
 
 .end{
     color: var(--s-light);
     margin-left: 1rem;
+    font-size: 0.75rem;
+}
+
+.ft_right ul{
+    padding: 0;
+    gap: 0.5rem;
+}
+
+.ft_right .fa-solid{
+    color: var(--s-light);
 }
 /* #endregion footer */
 

@@ -194,12 +194,20 @@ footer.bottom{
     border: 1px solid white;
     border-radius: 1rem;
     color: white;
-    margin: 1.2rem;
-    
+    margin: 1.2rem;    
 }
 
 .create_for h5, .pop_artists h5{
     margin: 1rem;
+}
+
+.album_play{
+    top: 42%;
+    left: 39%;
+    position: absolute;
+    background-color: transparent;
+    display: none;
+    color: var(--s-light);
 }
 /* #endregion content */
 
@@ -259,11 +267,7 @@ footer.bottom{
 }
 
 .music_buttons{
-    justify-content: space-between;
     display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 0.25rem;
 }
 .ft_middle .bar{
     position: relative;
@@ -271,6 +275,17 @@ footer.bottom{
     margin: auto 0;
 }
 
+.circle_pointer{
+    width: 7px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--s-light);
+    position: absolute;
+    left: 50%;
+    z-index: 6;
+    bottom: -5px;
+    display: none;
+}
 .ft_right .bar{
     position: relative;
     width: 85px;
@@ -290,7 +305,7 @@ footer.bottom{
 
 .ft_middle .white_bar{
     position: absolute;
-    width: 30px;
+    width: 50%;
     height: 3px;
     background-color: var(--s-light);
     border-radius: 1rem;
@@ -308,7 +323,7 @@ footer.bottom{
 }
 .volume_whitebar{
     position: absolute;
-    width: 20px;
+    width: 50%;
     height: 3px;
     background-color: var(--s-light);
     border-radius: 1rem;
@@ -330,6 +345,7 @@ footer.bottom{
 .ft_right ul{
     padding: 0;
     gap: 0.5rem;
+    margin: 0;
 }
 
 .ft_right .fa-solid{
@@ -348,12 +364,42 @@ footer.bottom{
     .img_song{
         width: 42px;
     }
+
+    .ft_middle .bar{
+        position: relative;
+        width: 155px;
+        margin: auto 0;
+    }
+    .ft_middle .grey_bar{
+        position: absolute;
+        width: 155px;
+        height: 3px;
+        background-color: var(--s-greytext);
+        border-radius: 1rem;
+        margin: auto;    
+        z-index: 1;
+    }
 }
 @media screen and (min-width:878px) {
+
     .simbols{
         flex-direction: row;
     }
 
+    .ft_middle .bar{
+        position: relative;
+        width: 250px;
+        margin: auto 0;
+    }
+    .ft_middle .grey_bar{
+        position: absolute;
+        width: 250px;
+        height: 3px;
+        background-color: var(--s-greytext);
+        border-radius: 1rem;
+        margin: auto;    
+        z-index: 1;
+    }
 
     /* #region columns */
 
@@ -414,6 +460,20 @@ footer.bottom{
         width: 230px;
         overflow-y: hidden;
     } 
+    .ft_middle .bar{
+        position: relative;
+        width: 430px;
+        margin: auto 0;
+    }
+    .ft_middle .grey_bar{
+        position: absolute;
+        width: 430px;
+        height: 3px;
+        background-color: var(--s-greytext);
+        border-radius: 1rem;
+        margin: auto;    
+        z-index: 1;
+    }
 
     /* #region columns */
     .col_lg_1 {
@@ -484,3 +544,28 @@ a:active{
 a:hover{
     color: var(--s-light);
 }
+
+.white_bar:hover{
+    background-color: var(--s-greenbar);
+}
+
+.white_bar:hover + .circle_pointer{
+    display: block;
+}
+
+.volume_whitebar:hover{
+    background-color: var(--s-greenbar);
+}
+
+.volume_whitebar:hover + .circle_pointer{
+    display: block;
+}
+
+.playlist_cover:hover{
+    filter: brightness(0.5);
+}
+
+.playlist_cover:hover + .album_play{
+    display: block;
+}
+

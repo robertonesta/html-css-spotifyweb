@@ -569,3 +569,10 @@ a:hover{
     display: block;
 }
 
+.fa-heart:hover{
+    color: var(--s-light);
+}
+
+.fa-folder:hover{
+    color: var(--s-light);
+}

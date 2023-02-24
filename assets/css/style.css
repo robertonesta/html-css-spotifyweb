@@ -234,18 +234,35 @@ footer.bottom{
     color: black;
 }
 
-.install_symbol, .user{
+.install_symbol{
     height: 50%;
-    align-content: center;
-    padding: 6px 0;
+    font-size: 0.6rem;
+    color: grey;
+}
+
+.user{
+    height: 50%;
+    font-size: 0.8rem;
+    color: white;
 }
 .sidebar i{
     color: var(--s-greytext);
 }
 .sidebar_bottom{
-    text-align: center;
+    padding: 0 20px;    
 }
 
+.sidebar_bottom svg{
+    max-width: 10%;
+}
+.sidebar_bottom span{
+    display: none;    
+}
+hr{
+    width: 133px;
+    margin: 0.25rem auto;
+    display: none;
+}
 /* #region content */
 
 .upgrade{
@@ -443,6 +460,10 @@ footer.bottom{
         max-width: 20%;
     }
     .playlists{
+        display: block;
+    }
+
+    .sidebar_bottom span, .sidebar_bottom hr{
         display: block;
     }
 

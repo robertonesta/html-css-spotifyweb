@@ -73,6 +73,9 @@ h5{
     flex-direction: column;
 }
 
+.ali_ite_center{
+    align-items: center;
+}
 ul {
     list-style-type: none;
     justify-content: center;
@@ -197,7 +200,13 @@ footer.bottom{
 }
 .settings span{
     display: none;
+    font-size: 0.8rem;
 }
+.settings a{
+    color: grey;
+    text-decoration: none;
+}
+
 .install_symbol, .user{
     height: 50%;
     text-align: center;
@@ -401,6 +410,9 @@ footer.bottom{
 
     .settings span{
         display: block;
+    }
+    .settings svg{
+        max-width: 20%;
     }
 
     .img_song{

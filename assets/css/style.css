@@ -195,8 +195,8 @@ footer.bottom{
 }
 .complete_logo{
     display: none;
-    width: 100%;
-    padding: 1rem;
+    width: 84%;
+    padding: 1rem 0;
 }
 .settings span{
     display: none;

@@ -234,17 +234,21 @@ footer.bottom{
     color: black;
 }
 
-.install_symbol{
-    height: 50%;
+.install_symbol span{
     font-size: 0.6rem;
-    color: grey;
+    color: grey;  
+    padding: 10px 5px;  
+}
+.install_symbol, .user{
+    height: 40%;
+    align-items: center;
 }
 
-.user{
-    height: 50%;
+.user span{
     font-size: 0.8rem;
     color: white;
 }
+
 .sidebar i{
     color: var(--s-greytext);
 }
@@ -252,8 +256,14 @@ footer.bottom{
     padding: 0 20px;    
 }
 
-.sidebar_bottom svg{
-    max-width: 10%;
+.install_symbol svg{
+    max-width: 10px;
+    aspect-ratio: 1/1;
+}
+
+.user svg{
+    max-width: 20px;
+    aspect-ratio: 1/1;
 }
 .sidebar_bottom span{
     display: none;    

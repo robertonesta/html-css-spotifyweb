@@ -183,13 +183,20 @@ footer.bottom{
 
 /* sidebar */
 
-.logo{
+.logo, .settings{
     padding: 0 20px;
+}
+
+.sidebar ul{
+    margin: 0;
 }
 .complete_logo{
     display: none;
     width: 100%;
     padding: 1rem;
+}
+.settings span{
+    display: none;
 }
 .install_symbol, .user{
     height: 50%;
@@ -200,7 +207,6 @@ footer.bottom{
 .sidebar i{
     color: var(--s-greytext);
 }
-
 
 
 /* #region content */
@@ -390,6 +396,10 @@ footer.bottom{
     }
 
     .complete_logo{
+        display: block;
+    }
+
+    .settings span{
         display: block;
     }
 

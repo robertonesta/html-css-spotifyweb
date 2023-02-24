@@ -15,6 +15,7 @@ body{
     --s-sidebar: #000000;
     --s-footer: #282828;
     --s-greytext: #797b80;
+    --s-add_playlistbg: #a3a3a3;
 }
 
 img{
@@ -31,26 +32,26 @@ h4{
 h5{
     color: var(--s-greytext)
 }
+
+.playlists h6{
+    color: var(--s-light);
+    margin: 0.5rem 0;
+}
 /* #region debug */
 
-.debug .top{
-    background-color: paleturquoise;
-    
-}
-
-.debug footer{
+footer{
     background-color: var(--s-footer);
 }
 
-.debug .sidebar{
+.sidebar{
     background-color: var(--s-sidebar);
 }
 
-.debug .content {
+.content {
     background-color: var(--s-content);
 }
 
-.debug .card{
+.card{
     margin: 1rem;
     text-align: center;
     flex-direction: column;
@@ -114,11 +115,9 @@ nav a{
 
 .top .sidebar_top{
     height: calc(100% - 60px);
-    border: 1px dashed blue;
 }
 .top .sidebar_bottom {
     height: 60px;
-    border: 1px dashed white;
 }
 
 .top > .content{
@@ -200,23 +199,52 @@ footer.bottom{
 }
 .settings span{
     display: none;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
 }
 .settings a{
     color: grey;
     text-decoration: none;
 }
+.playlists{
+    display: none;
+    padding: 0 20px;
+}
+.playlists span{
+    font-size: 0.8rem;
+}
+.playlists a{
+    font-size: 0.6rem;
+    text-decoration: none;
+    color: grey;
+    line-height: 1.5rem;
+}
+.playlists ul{
+    padding: 0;
+    overflow-y: auto;
+    height: 15rem;
+}
+.add{
+    text-align: center;
+    width: 1.5rem;
+    aspect-ratio: 1/1;
+    margin-right: 0.25rem;
+    background-color: var(--s-add_playlistbg);
+}
+.add i{
+    color: black;
+}
 
 .install_symbol, .user{
     height: 50%;
-    text-align: center;
     align-content: center;
     padding: 6px 0;
 }
 .sidebar i{
     color: var(--s-greytext);
 }
-
+.sidebar_bottom{
+    text-align: center;
+}
 
 /* #region content */
 
@@ -413,6 +441,9 @@ footer.bottom{
     }
     .settings svg{
         max-width: 20%;
+    }
+    .playlists{
+        display: block;
     }
 
     .img_song{

@@ -294,6 +294,9 @@ hr{
 .create_for h5, .pop_artists h5{
     margin: 1rem;
 }
+.playlist_cover{
+    position:relative
+}
 
 .album_play{
     top: 42%;
@@ -301,7 +304,7 @@ hr{
     background-color: transparent;
     display: none;
     color: var(--s-light);
-    position: absolute
+    position: absolute;
 }
 
 /* #endregion content */

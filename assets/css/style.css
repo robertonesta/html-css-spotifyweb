@@ -111,9 +111,11 @@ nav a{
 
 .top .sidebar_top{
     height: calc(100% - 60px);
+    border: 1px dashed blue;
 }
 .top .sidebar_bottom {
     height: 60px;
+    border: 1px dashed white;
 }
 
 .top > .content{
@@ -178,6 +180,28 @@ footer.bottom{
 }
 
 /* #endregion columns */
+
+/* sidebar */
+
+.logo{
+    padding: 0 20px;
+}
+.complete_logo{
+    display: none;
+    width: 100%;
+    padding: 1rem;
+}
+.install_symbol, .user{
+    height: 50%;
+    text-align: center;
+    align-content: center;
+    padding: 6px 0;
+}
+.sidebar i{
+    color: var(--s-greytext);
+}
+
+
 
 /* #region content */
 
@@ -360,6 +384,14 @@ footer.bottom{
         width: 200px;
         overflow-y: hidden;
     }    
+
+    .only_logo{
+        display: none;
+    }
+
+    .complete_logo{
+        display: block;
+    }
 
     .img_song{
         width: 42px;

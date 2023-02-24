@@ -298,11 +298,12 @@ hr{
 .album_play{
     top: 42%;
     left: 39%;
-    position: absolute;
     background-color: transparent;
     display: none;
     color: var(--s-light);
+    position: absolute
 }
+
 /* #endregion content */
 
 /* #region footer */
@@ -357,10 +358,11 @@ hr{
 }
 
 .fa-circle-play{
-    padding: 0 0.5rem;
+    padding: 0 0.25rem;
 }
-
 .music_buttons{
+    margin: auto;
+    width: 10.25rem;
     display: flex;
 }
 .ft_middle .bar{
